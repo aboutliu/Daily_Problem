@@ -1,0 +1,4 @@
+| Difficulty | Problems                                               | Hints                                                        | Solution                                           |
+| ---------- | ------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------- |
+| 1500       | [CF566F](https://codeforces.com/contest/566/problem/F) | Find out what happens inside a clique, and try using DP to capture it. | [Editorial](https://codeforces.com/blog/entry/566) |
+| 1600       | [CF788A](https://codeforces.com/contest/788/problem/A) | a[i] − a[i + 1] doesn't really matter. How can you use DP to solve a segment-sum-maximum problem? This is similar. | [Editorial](https://codeforces.com/blog/entry/788) |
