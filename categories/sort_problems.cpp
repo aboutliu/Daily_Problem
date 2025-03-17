@@ -124,7 +124,7 @@ int main(int argc, char *argv[]) {
         cin >> newDifficulty;
         cin.ignore(); // 处理换行符
     
-        cout << "请输入新题目链接[]():";
+        cout << "请输入新题目链接[](): ";
         getline(cin, newProblem);
     
         cout << "请输入提示: ";
