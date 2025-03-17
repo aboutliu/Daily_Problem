@@ -11,7 +11,6 @@ struct Problem {
     int difficulty;
     string problem;
     string hint;
-    string solutions;
 
     // 排序规则（按照 difficulty 升序）
     bool operator<(const Problem &other) const {
@@ -22,13 +21,12 @@ struct Problem {
 // 解析 Markdown 表格的一行
 Problem parseLine(const string &line) {
     stringstream ss(line);
-    string temp, diffStr, problem, hint, solutions;
+    string temp, diffStr, problem, hint;
 
     getline(ss, temp, '|'); // 跳过第一个 '|'
     getline(ss, diffStr, '|');
     getline(ss, problem, '|');
     getline(ss, hint, '|');
-    getline(ss, solutions, '|');
 
     // 去除字符串前后空格
     auto trim = [](string &s) {
@@ -39,9 +37,8 @@ Problem parseLine(const string &line) {
     trim(diffStr);
     trim(problem);
     trim(hint);
-    trim(solutions);
 
-    return {stoi(diffStr), problem, hint, solutions};
+    return {stoi(diffStr), problem, hint};
 }
 
 // 读取 Markdown 文件并解析数据
@@ -81,23 +78,23 @@ void writeMarkdownFile(const string &filename, const vector<Problem> &problems) 
     }
 
     // 写入表头
-    file << "| Difficulty | Problems | Hints | Solutions |\n";
-    file << "|------------|------------|-----------|-----------|\n";
+    file << "| Difficulty | Problems | Hints |\n";
+    file << "|------------|------------|-----------|\n";
 
     // 写入题目数据
     for (const auto &p : problems) {
-        file << "| " << p.difficulty << " | " << p.problem << " | " << p.hint << " | " << p.solutions << " |\n";
+        file << "| " << p.difficulty << " | " << p.problem << " | " << p.hint << " |\n";
     }
 
     file.close();
 }
 
 // 插入新数据并排序
-void insertAndSort(const string &filename, int newDifficulty, const string &newProblem, const string &newHint, const string &newsolutions) {
+void insertAndSort(const string &filename, int newDifficulty, const string &newProblem, const string &newHint) {
     vector<Problem> problems = readMarkdownFile(filename);
 
     // 插入新数据
-    problems.push_back({newDifficulty, newProblem, newHint, newsolutions});
+    problems.push_back({newDifficulty, newProblem, newHint});
 
     // 按难度排序
     sort(problems.begin(), problems.end());
@@ -112,30 +109,28 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     string filename = argv[1]; // 你的 Markdown 文件
-    int newDifficulty;
-    string newProblem, newHint, newsolutions;
-
-    cout << "请输入需要添加的题目数量: ";
-
+    cout << "输入本次需要添加的题目数量: ";
     int t;
-    cin >> t;
+    std::cin >> t;
 
-    while (t--) {   cout << "请输入新题目难度: ";
+    for (int i = 0; i < t; ++i) {
+        int newDifficulty;
+        string newProblem, newHint;
+
+        cout << "请输入新题目难度: ";
         cin >> newDifficulty;
         cin.ignore(); // 处理换行符
-    
-        cout << "请输入新题目链接[]():";
+
+        cout << "请输入新题目链接[](): ";
         getline(cin, newProblem);
-    
+
         cout << "请输入提示: ";
         getline(cin, newHint);
-    
-        cout << "请输入做法: ";
-        getline(cin, newsolutions);
-    
-        insertAndSort(filename, newDifficulty, newProblem, newHint, newsolutions);
-    
-        cout << "题目已添加并排序，检查 " << filename << " 文件！" << endl;
+
+        insertAndSort(filename, newDifficulty, newProblem, newHint);
+
+        cout << "本次的第" << i + 1 << "个题目已添加并排序，检查 " << filename << " 文件！" << endl;
     }
+    
     return 0;
 }
