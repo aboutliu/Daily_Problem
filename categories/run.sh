@@ -2,7 +2,7 @@
 
 # 设置 C++ 文件名（不包含 .cpp 后缀）
 CPP_FILE="sort_problems"
-MD_FILE="DP.md"
+MD_FILE="number_theory.md"
 
 # 编译 C++ 代码（使用 g++）
 g++ -std=c++11 -o "$CPP_FILE" "$CPP_FILE.cpp"
