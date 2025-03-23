@@ -204,7 +204,6 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     string filename = argv[1]; // 你的 Markdown 文件
-    std::cerr << filename << " <-\n";
     string categories_path = argv[2]; // 你的 categories 地址
     string solution_path = argv[3]; // 你的 solution 地址
     int newDifficulty;
@@ -217,7 +216,7 @@ int main(int argc, char *argv[]) {
     cin.ignore(); // 处理换行符
 
     while (t--) {  
-        cout << "请输入题目名称！！！: ";
+        cout << "请输入题目名称: ";
         getline(cin, problemname);
         problemname += ".md";
 
@@ -225,8 +224,9 @@ int main(int argc, char *argv[]) {
         cin >> newDifficulty;
         cin.ignore(); // 处理换行符
     
-        cout << "请输入新题目链接[](): ";
+        cout << "请输入新题目链接: ";
         getline(cin, newProblem);
+        newProblem = "[" + problemname + "](" + newProblem + ")";
     
         cout << "请输入提示: ";
         getline(cin, newHint);
@@ -235,11 +235,9 @@ int main(int argc, char *argv[]) {
         getline(cin, categories);
         categories_path += categories + ".md";
     
-        newsolutions = "[Editorial](" + solution_path + problemname + ")";
         insertAndSort1(filename, newDifficulty, newProblem, newHint);
-        std::cout << "打开了 problem.md\n";
+        newsolutions = "[Editorial](" + solution_path + problemname + ")";
         insertAndSort(categories_path, newDifficulty, newProblem, newHint, newsolutions);
-        std::cout << "打开了 categories\n";
     
         cout << "题目已添加并排序，检查 " << filename << " 文件！" << endl;
     }
