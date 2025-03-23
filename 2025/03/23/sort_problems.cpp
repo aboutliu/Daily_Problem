@@ -112,7 +112,7 @@ vector<Problem1> readMarkdownFile1(const string &filename) {
     bool headerSkipped = false;
 
     if (!file) {
-        cerr << "无法打开文件: " << filename << endl;
+        cerr << "无法打开文件?: " << filename << endl;
         exit(1);
     }
 
@@ -204,6 +204,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     string filename = argv[1]; // 你的 Markdown 文件
+    std::cerr << filename << " <-\n";
     string categories_path = argv[2]; // 你的 categories 地址
     string solution_path = argv[3]; // 你的 solution 地址
     int newDifficulty;
@@ -213,9 +214,10 @@ int main(int argc, char *argv[]) {
 
     int t;
     cin >> t;
+    cin.ignore(); // 处理换行符
 
     while (t--) {  
-        cout << "请输入题目名称: ";
+        cout << "请输入题目名称！！！: ";
         getline(cin, problemname);
         problemname += ".md";
 
@@ -231,10 +233,13 @@ int main(int argc, char *argv[]) {
 
         cout << "请输入categories: ";
         getline(cin, categories);
+        categories_path += categories + ".md";
     
         newsolutions = "[Editorial](" + solution_path + problemname + ")";
-        // insertAndSort1(filename, newDifficulty, newProblem, newHint);
+        insertAndSort1(filename, newDifficulty, newProblem, newHint);
+        std::cout << "打开了 problem.md\n";
         insertAndSort(categories_path, newDifficulty, newProblem, newHint, newsolutions);
+        std::cout << "打开了 categories\n";
     
         cout << "题目已添加并排序，检查 " << filename << " 文件！" << endl;
     }
