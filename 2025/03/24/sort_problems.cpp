@@ -218,6 +218,7 @@ int main(int argc, char *argv[]) {
     while (t--) {  
         cout << "请输入题目名称: ";
         getline(cin, problemname);
+        auto tname = problemname;
         problemname += ".md";
 
         cout << "请输入新题目难度: ";
@@ -226,7 +227,7 @@ int main(int argc, char *argv[]) {
     
         cout << "请输入新题目链接: ";
         getline(cin, newProblem);
-        newProblem = "[" + problemname + "](" + newProblem + ")";
+        newProblem = "[" + tname + "](" + newProblem + ")";
     
         cout << "请输入提示: ";
         getline(cin, newHint);
