@@ -3,8 +3,8 @@
 # 设置 C++ 文件名（不包含 .cpp 后缀）
 CPP_FILE="sort_problems"
 MD_FILE="problem.md"
-CATEGORIES_MD_FILE="/Users/blue/Daily_Problem/categories/"
-GITHUB_PATH="https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/23/solution/"
+CATEGORIES_MD_FILE="/Users/blue/Desktop/Daily_Problem/categories/"
+GITHUB_PATH="https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/25/solution/"
 
 # 编译 C++ 代码（使用 g++）
 g++ -std=c++17 -o "$CPP_FILE" "$CPP_FILE.cpp"
