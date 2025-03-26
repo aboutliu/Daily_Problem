@@ -234,11 +234,11 @@ int main(int argc, char *argv[]) {
 
         cout << "请输入categories: ";
         getline(cin, categories);
-        categories_path += categories + ".md";
+        auto tcategories_path = categories_path + categories + ".md";
     
         insertAndSort1(filename, newDifficulty, newProblem, newHint);
         newsolutions = "[Editorial](" + solution_path + problemname + ")";
-        insertAndSort(categories_path, newDifficulty, newProblem, newHint, newsolutions);
+        insertAndSort(tcategories_path, newDifficulty, newProblem, newHint, newsolutions);
     
         cout << "题目已添加并排序，检查 " << filename << " 文件！" << endl;
     }
