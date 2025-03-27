@@ -223,34 +223,17 @@ void solve() {
 		return std::hypot(l1 - l2, r1 - r2) <= d;
 	};
 
+    int td = 0, p = 0;
+    while (std::hypot(1, p + 1) <= d) {
+        p++;
+        td++;
+    }
 	for (int i = 1; i < n; ++i) {
 		for (int j = 0; j < m; ++j) {
 			if (s[i][j] == '#') {
 				continue;
 			}
-			int lo = 0, hi = j, res1 = j;
-			while (lo <= hi) {
-				int mid = (lo + hi) / 2;
-				if (check(i - 1, mid, i, j)) {
-					res1 = mid;
-					hi = mid - 1;
-				} else {
-					lo = mid + 1;
-				}
-			}
-			lo = j;
-			hi = m - 1;
-			int res2 = j;
-			while (lo <= hi) {
-				int mid = (lo + hi) / 2;
-				if (check(i - 1, mid, i, j)) {
-					res2 = mid;
-					lo = mid + 1;
-				} else {
-					hi = mid - 1;
-				}
-			}
-			dp1[i + 1][j + 1] += pref[i][res2 + 1] - pref[i][res1];
+            dp1[i + 1][j + 1] += pref[i][std::min(m, j + td + 1)] - pref[i][std::max(0, j - td)];
 		}
 		std::vector<Z> tpref(m + 1);
 		for (int j = 0; j < m; ++j) {
