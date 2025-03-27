@@ -232,13 +232,19 @@ int main(int argc, char *argv[]) {
         cout << "请输入提示: ";
         getline(cin, newHint);
 
-        cout << "请输入categories: ";
-        getline(cin, categories);
-        auto tcategories_path = categories_path + categories + ".md";
-    
         insertAndSort1(filename, newDifficulty, newProblem, newHint);
-        newsolutions = "[Editorial](" + solution_path + problemname + ")";
-        insertAndSort(tcategories_path, newDifficulty, newProblem, newHint, newsolutions);
+
+        cout << "请输入categories: ";
+        while (1) {
+            getline(cin, categories);
+            if (categories == ".") {
+                break;
+            }
+            auto tcategories_path = categories_path + categories + ".md";
+            newsolutions = "[Editorial](" + solution_path + problemname + ")";
+            insertAndSort(tcategories_path, newDifficulty, newProblem, newHint, newsolutions);
+        }
+    
     
         cout << "题目已添加并排序，检查 " << filename << " 文件！" << endl;
     }
