@@ -2,7 +2,7 @@
 
 转移很显然就是首先是 $\sum dp_v$ ，然后就是以 $u$ 为 $lca$ 的路径上的 $\sum dp_v$ ，这个是难点。
 
-<img src="https://github.com/aboutliu/Daily_Problem/blob/main/pictures/2025-03-27.png" alt="image-20250327224130566" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/aboutliu/Daily_Problem/main/pictures/2025-03-27.png" alt="Daily Problem Image" style="width:50%;" />
 
 假设 $1 \rightarrow 5$ ，就是 $sum_1 - dp_1 + sum_2 - dp_5 + sum_5$ 。使用树链剖分即可。
 
