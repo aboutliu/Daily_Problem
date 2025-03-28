@@ -1,6 +1,8 @@
 | Difficulty | Problems | Hints | Solutions |
 |------------|------------|-----------|-----------|
+| 1100 | [250ThousandTonsofTNT](https://codeforces.com/contest/1899/problem/B) | 注意到因子数量 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/28/solution/250ThousandTonsofTNT.md) |
 | 1300 | [小柒分糖果](https://ac.nowcoder.com/acm/contest/103151/C) | 隔板法 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/14/solution/%E5%B0%8F%E6%9F%92%E5%88%86%E7%B3%96%E6%9E%9C.md) |
+| 1300 | [YarikandMusicalNotes](https://codeforces.com/contest/1899/problem/D) | 打表 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/28/solution/YarikandMusicalNotes.md) |
 | 1551 | [PartitioningtheArray](https://codeforces.com/contest/1920/problem/C) | $n$ 以内因子数量最多的数其数量为 $128$ | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/26/solution/PartitioningtheArray.md) |
 | 1800 | [ServalandModulo](https://codeforces.com/contest/2085/problem/E) | 注意到 $\Delta=\sum a-\sum b,k | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/23/solution/ServalandModulo.md) |
 | 2000 | [SmallGcd](https://codeforces.com/problemset/problem/1900/D) | 枚举因子，容斥 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/22/solution/SmallGcd.md) |

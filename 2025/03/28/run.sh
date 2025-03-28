@@ -4,7 +4,7 @@
 CPP_FILE="sort_problems"
 MD_FILE="problem.md"
 CATEGORIES_MD_FILE="/Users/blue/Desktop/Daily_Problem/categories/"
-GITHUB_PATH="https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/27/solution/"
+GITHUB_PATH="https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/28/solution/"
 
 # 编译 C++ 代码（使用 g++）
 g++ -std=c++17 -o "$CPP_FILE" "$CPP_FILE.cpp"
