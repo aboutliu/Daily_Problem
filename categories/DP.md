@@ -7,3 +7,4 @@
 | 1859 | [IgorandMountain](https://codeforces.com/contest/2091/problem/F) | 考虑设计多个状态解决重复问题 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/26/solution/IgorandMountain.md) |
 | 2000 | [Treechainproblem](https://acm.hdu.edu.cn/showproblem.php?pid=5293) | 太简单 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/27/solution/Treechainproblem.md) |
 | 2226 | [CountingBinaryStrings](https://codeforces.com/contest/1920/problem/E) | 思考如何计算 $good$ 串 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/26/solution/CountingBinaryStrings.md) |
+| 2280 | [P12002吃猫粮的玉桂狗](https://www.luogu.com.cn/problem/P12002) | 树形dp，容斥 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/03/solution/P12002吃猫粮的玉桂狗.md) |

@@ -7,3 +7,4 @@
 | 1800 | [ServalandModulo](https://codeforces.com/contest/2085/problem/E) | 注意到 $\Delta=\sum a-\sum b,k | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/23/solution/ServalandModulo.md) |
 | 2000 | [SmallGcd](https://codeforces.com/problemset/problem/1900/D) | 枚举因子，容斥 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/22/solution/SmallGcd.md) |
 | 2000 | [P11312神奇的小江鸟](https://www.luogu.com.cn/problem/P11312) | 注意到 $k$ 很小，考虑枚举 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/25/solution/P11312神奇的小江鸟.md) |
+| 2280 | [P12002吃猫粮的玉桂狗](https://www.luogu.com.cn/problem/P12002) | 树形dp，容斥 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/03/solution/P12002吃猫粮的玉桂狗.md) |
