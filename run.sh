@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置 C++ 文件名（不包含 .cpp 后缀）
-DATE="2025/04/04"
+DATE="2025/04/05"
 CPP_FILE="sort_problems"
 MD_FILE="/Users/blue/Desktop/Daily_Problem/${DATE}/problem.md"
 CATEGORIES_MD_FILE="/Users/blue/Desktop/Daily_Problem/categories"
