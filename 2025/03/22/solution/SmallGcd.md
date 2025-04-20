@@ -2,7 +2,7 @@
 
 设 $f_x$ 为 $a_j$ 为 $x$ 的倍数的个数，$g_x$ 为 $gcd(a_i, a_j) = x$ 的个数，$j \in [1, i)$ 。用调和级数预处理出每个数的因子，枚举 $i$ 的时候我们从大到小枚举 $a_i$ 的因子 $d$ ，我们先让 $g[d] = f[d]$ ，此时，如果有一个数 $t$ 且 $d|t$ ，那么 $g[d]$ 应该减去 $g[t]$ ，所以我们还应该枚举 $d$ 的因子进行容斥。
 
-复杂度是 $O(VlogmaxV + n \; maxd^2(V)$ 。
+复杂度是 $O(VlogmaxV + n \cdot maxd^2(V)$ 。
 
 ```cpp 
 #include <bits/stdc++.h>
