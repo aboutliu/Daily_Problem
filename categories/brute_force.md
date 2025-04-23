@@ -9,4 +9,5 @@
 | 1300 | [小紫的优势博弈](https://ac.nowcoder.com/acm/contest/103948/D) | 考虑前缀和 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/17/solution/%E5%B0%8F%E7%B4%AB%E7%9A%84%E4%BC%98%E5%8A%BF%E5%8D%9A%E5%BC%88.md) |
 | 1313 | [InterestingRatio](https://codeforces.com/contest/2091/problem/E) | 打表 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/26/solution/InterestingRatio.md) |
 | 1400 | [小紫的线段染色](https://ac.nowcoder.com/acm/contest/103948/E) | 只要合法，考虑如何染色即可 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/17/solution/%E5%B0%8F%E7%B4%AB%E7%9A%84%E7%BA%BF%E6%AE%B5%E6%9F%93%E8%89%B2.md) |
+| 1600 | [PathtoInteger](https://atcoder.jp/contests/abc402/tasks/abc402_f) | $meet in middle$ | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/23/solution/PathtoInteger.md) |
 | 1800 | [过分的子区间](https://bs.daimayuan.top/p/5) | 双指针，枚举 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/05/solution/过分的子区间.md) |
