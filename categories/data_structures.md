@@ -2,6 +2,7 @@
 |------------|------------|-----------|-----------|
 | 1800 | [过分的子区间](https://bs.daimayuan.top/p/5) | 双指针，枚举 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/05/solution/过分的子区间.md) |
 | 1900 | [UnusualEntertainment](https://codeforces.com/contest/1899/problem/G) | 二维数点 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/03/28/solution/UnusualEntertainment.md) |
+| 1965 | [OddPositionSumQuery](https://atcoder.jp/contests/abc403/tasks/abc403_g) | 动态开点线段树 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/28/solution/OddPositionSumQuery.md) |
 | 2100 | [异或问题](https://bs.daimayuan.top/p/36) | BitTrie | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/09/solution/异或问题.md) |
 | 2100 | [带修求和](https://bs.daimayuan.top/p/12) | 线段树二分 | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/10/solution/带修求和.md) |
 | 2105 | [ShortentheArray](https://codeforces.com/contest/2093/problem/G) | BitTrie | [Editorial](https://github.com/aboutliu/Daily_Problem/blob/main/2025/04/09/solution/ShortentheArray.md) |
